@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <title>Mi nuevo proyecto</title>
+    <input type="number" id="num1"> 
+    <input type="number" id="num2"> 
+    <button id="sumar">Sumar</button> 
+    <button id="restar">Restar</button> 
+    <p id="resultado"></p>
+
+    <script> 
+        document.getElementById("sumar").addEventListener("click", function() { 
+            let n1 = parseFloat(document.getElementById("num1").value); 
+            let n2 = parseFloat(document.getElementById("num2").value); 
+            document.getElementById("resultado").innerText = n1 + n2; 
+        }); 
+        document.getElementById("restar").addEventListener("click", function() { 
+            let n1 = parseFloat(document.getElementById("num1").value); 
+            let n2 = parseFloat(document.getElementById("num2").value); 
+            document.getElementById("resultado").innerText = n1 - n2; 
+        }); 
+    </script>
 </body>
 </html>
